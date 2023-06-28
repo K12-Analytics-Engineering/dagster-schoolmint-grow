@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dagster-schoolmint-grow"
+version = "0.1.0"
+description = ""
+authors = ["Marcos Alcozer <marcos@alcozer.dev>"]
+readme = "README.md"
+packages = [{include = "dagster_schoolmint_grow"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dagster = "1.3.11"
+dagster-gcp = "0.19.11"
+tenacity = "^8.2.2"
+requests-oauthlib = "^1.3.1"
+
+[tool.poetry.group.dev.dependencies]
+dagit = "1.3.11"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
